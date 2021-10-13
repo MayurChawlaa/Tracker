@@ -1,3 +1,5 @@
+import "./display_style.css";
+
 function Display(){
     return(
         <div className="display-container">

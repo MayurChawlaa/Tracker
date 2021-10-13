@@ -4,3 +4,12 @@
     "d a"
     "t a";
 }
+.display-date {
+    grid-area:"d";
+}
+.display-tag{
+    grid-area:"t";
+}
+.display-amount {
+    grid-area:"a";
+}
