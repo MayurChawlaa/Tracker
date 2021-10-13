@@ -1,0 +1,6 @@
+.display-container {
+    display: grid;
+    grid-area: 
+    "d a"
+    "t a";
+}
