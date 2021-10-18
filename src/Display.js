@@ -8,7 +8,7 @@ function Display(){
                 <div className="display-tag-name">Salary</div>
                 <div className="display-tag-sign"><button>+</button></div>
             </div>
-            <div className="display-amount">35,145</div>
+            <div className="display-amount">35,939</div>
         </div>
     );
 }
