@@ -12,6 +12,9 @@
     border-right:1px solid black;
     border-bottom: 0.5px solid black;
 }
+.display-date:focus {
+    outline:none;
+}
 .display-tag{
     padding: 2.5px 2.5px 5px 5px;
     grid-area:t;
@@ -21,6 +24,9 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+.display-tag-name:focus {
+    outline: none;
+}
 .display-tag-sign > button {
     padding: 0px 5px;
     margin: 0px;
@@ -29,4 +35,7 @@
     padding: 5px 5px 5px 2.5px;
     grid-area:a;
     overflow: auto;
+}
+.display-amount:focus {
+    outline: none;
 }
