@@ -26,6 +26,6 @@ code {
 }
 .column {
   border : 1px solid black;
-  width : 150px;
+  width : 200px;
   max-width: 200px;
 }
