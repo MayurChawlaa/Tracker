@@ -1,6 +1,12 @@
 import Display from "./Display";
 function Tracker(){
+    const Sum = () => {
+            console.log("Sum");
+            const table = document.querySelector(".table");
+            console.log(table);
+    };
     return(
+        <div>
         <div className="table">
             <div className="row header">
                 <div className="column first-column">Mayur</div>
@@ -106,6 +112,8 @@ function Tracker(){
                 <div className="column" contentEditable="true"></div>
                 <div className="column" contentEditable="true">Grand Total</div>
             </div>
+        </div>
+        <button onClick={Sum}>Sum</button>
         </div>
     )
 }
