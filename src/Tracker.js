@@ -99,7 +99,8 @@ function Tracker(){
                 <div className="column" contentEditable="true"></div>
             </div>
             <div className="row">
-                <div className="column">Goals =></div>
+                <div className="column">Goals =&gt;</div>
+                
                 <div className="column" contentEditable="true"></div>
                 <div className="column" contentEditable="true"></div>
                 <div className="column" contentEditable="true"></div>
