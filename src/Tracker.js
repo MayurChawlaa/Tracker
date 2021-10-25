@@ -3,7 +3,23 @@ function Tracker(){
     const Sum = () => {
             console.log("Sum");
             const table = document.querySelector(".table");
-            console.log(table);
+            //console.log(table.childElementCount,table.childNodes);
+            for(let i=1;i<table.childElementCount-3;i++)
+            {
+                console.log(table.childNodes[i]);
+                
+                let row = table.childNodes[i];
+                for(let j=1;j<row.childElementCount;j++)
+                {
+                    //columns
+                    let column = row.childNodes[j];
+                    console.log(column);
+                    //children of columns are date,tag and amount
+                    let container = column.childNodes[0];
+                    console.log(container);
+                    //console.log(container[0].childNodes);
+                }
+            }
     };
     return(
         <div>
