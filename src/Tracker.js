@@ -1,14 +1,17 @@
 import Display from "./Display";
 function Tracker() {
     const Sum = () => {
-        console.log("Sum");
+        //console.log("Sum");
         const table = document.querySelector(".table");
         for (let i = 1; i < table.childElementCount - 3; i++) {
 
             //get a row
             //console.log(table.childNodes[i]);                
             let row = table.childNodes[i];
+            //console.log(row);
+            let sum = [];
             for (let j = 1; j < row.childElementCount - 1; j++) {
+                let temp_sum = 0;
                 //get columns
                 let column = row.childNodes[j];
                 //console.log(column);
@@ -16,19 +19,15 @@ function Tracker() {
                 //getting column child container
                 //children of columns are date,tag and amount
                 let container = column.childNodes[0];
-                console.log(container);
+                //console.log(container);
                 //gettign the child nodes of the column
                 let containerChildNodes = container.childNodes;
                 //getting the amount element of the container 
-                console.log(containerChildNodes[2].innerText);
-
-                //console.log("has child : ", container.hasChildNodes);
-                //console.log(container.hasChildNodes());
-                // let m = container.childNodes[2].querySelector(".display-amount");
-                // console.log(m);
-                //let temp_container = container.cloneNode();
-                //console.log(temp_container.hasChildNodes());
+                // console.log(containerChildNodes[2].innerText);
+                temp_sum = temp_sum + parseInt(containerChildNodes[2].innerText);
+                sum[i] = temp_sum;
             }
+            console.log(sum);
         }
     };
     return (
